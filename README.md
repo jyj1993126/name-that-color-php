@@ -11,7 +11,7 @@ A PHP library that uses the library that the name that color project (http://chi
 # Usage
 
 ```
-    echo Ntc::getInstances('zh-cn')->name('DC143C');
+    echo Ntc::getInstance('zh-cn')->name('DC143C');
     
     > 红色
 ```
