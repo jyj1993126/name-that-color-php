@@ -1,12 +1,17 @@
 {
-    "name": "jyj1993126/name-that-color-php",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "LeonJ",
-            "email": "jyj1993126@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "jyj1993126/name-that-color-php",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "JYJ1993126\\NameThatColor\\": "src"
+    }
+  },
+  "authors": [
+    {
+      "name": "LeonJ",
+      "email": "jyj1993126@gmail.com"
+    }
+  ],
+  "require": {}
 }
