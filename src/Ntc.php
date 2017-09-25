@@ -24,10 +24,11 @@ class Ntc
      * @param string $dir
      * @return Ntc
      */
-    public static function getInstance($library = 'en', $dir = __DIR__ )
+    public static function getInstance($library = 'en', $dir = __DIR__ . '/lib')
     {
+        $dir = trim($dir, '/');
         if (!isset(self::$instances[$library])) {
-            $path = "{$dir}/lib/$library.txt";
+            $path = "/$dir/$library.txt";
             if (!file_exists($path)) {
                 return self::getInstance();
             }
